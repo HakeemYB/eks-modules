@@ -40,7 +40,7 @@ variable "max_size" {
 variable "min_size" {
   type        = number
   description = "The minimum number of worker nodes"
-  default = 0
+  default = 1
 }
 variable "name" {
   default = "eks-cluster-demo"
