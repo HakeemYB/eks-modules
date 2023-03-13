@@ -38,7 +38,7 @@ resource "aws_eks_node_group" "private-nodes" {
     aws_subnet.private-us-east-1b.id
   ]
 
-  capacity_type  = "ON_DEMAND"
+
   instance_types = var.instance_types
 
   scaling_config {
@@ -47,9 +47,7 @@ resource "aws_eks_node_group" "private-nodes" {
     min_size     = var.min_size
   }
 
-  update_config {
-    max_unavailable = 1
-  }
+
 
   labels = {
     role = "general"
