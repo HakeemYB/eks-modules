@@ -5,7 +5,7 @@ variable "vpc_cidr_block" {
 
 variable "vpc_id" {
   description = "ID of the VPC"
-  default = "vpc-0e95664a3ab669243"
+  default = "aws_vpc.main.id"
 }
 
  variable "region" {
