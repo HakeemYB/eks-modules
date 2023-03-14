@@ -5,13 +5,13 @@ variable "vpc_cidr_block" {
 
 variable "vpc_id" {
   description = "ID of the VPC"
-  default = "vpc-0e95664a3ab669243"
+  default = "vpc-00ad2d3413bc3aeba"
 }
 
  variable "region" {
    description = "The AWS region to use"
    type        = string
-   default     = "us-east-2"
+   default     = "us-east-1"
 }
 
 
